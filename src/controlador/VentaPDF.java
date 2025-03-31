@@ -85,7 +85,7 @@ public class VentaPDF {
             PdfWriter.getInstance(doc, archivo);
             doc.open();
 
-            Image img = Image.getInstance("src/img/ventas.png");
+            Image img = Image.getInstance("src/img/logo_azul.png");
             Paragraph fecha = new Paragraph();
             Font negrita = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD, BaseColor.BLUE);
             fecha.add(Chunk.NEWLINE); //agregar nueva linea
@@ -101,11 +101,11 @@ public class VentaPDF {
             //agregar celdas
             Encabezado.addCell(img);
 
-            String ruc = "0987654321001";
-            String nombre = "Fantasma Cooporation";
-            String telefono = "0987654321";
-            String direccion = "Tamarindo City";
-            String razon = "La magia de la programacion, esta en el poder de tu imaginacion";
+            String ruc = "00000000000";
+            String nombre = "Carpinteria JoseAbel";
+            String telefono = "322 9608013";
+            String direccion = "Duitama Boyaca";
+            String razon = "Diseñamos tu futuro";
 
             Encabezado.addCell("");//celda vacia
             Encabezado.addCell("RUC: " + ruc + "\nNOMBRE: " + nombre + "\nTELEFONO: " + telefono + "\nDIRECCION: " + direccion + "\nRAZON SOCIAL: " + razon);
@@ -203,12 +203,12 @@ public class VentaPDF {
             info.add("Total a pagar: " + InterFacturacion.txt_total_pagar.getText());
             info.setAlignment(Element.ALIGN_RIGHT);
             doc.add(info);
-            
+           
             //Firma
            Paragraph firma = new Paragraph();
            firma.add(Chunk.NEWLINE);
            firma.add("Cancelacion y firma\n\n");
-           firma.add("_______________________");
+           firma.add("_________________________________");
            firma.setAlignment(Element.ALIGN_CENTER);
            doc.add(firma);
            

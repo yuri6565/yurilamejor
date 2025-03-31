@@ -284,6 +284,11 @@ public class InterFacturacion extends javax.swing.JInternalFrame {
 
         txt_cambio.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         txt_cambio.setEnabled(false);
+        txt_cambio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_cambioActionPerformed(evt);
+            }
+        });
         jPanel2.add(txt_cambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 120, -1));
 
         jButton_calcular_cambio.setBackground(new java.awt.Color(51, 255, 255));
@@ -529,6 +534,10 @@ public class InterFacturacion extends javax.swing.JInternalFrame {
         }
 
     }//GEN-LAST:event_jButton_RegistrarVentaActionPerformed
+
+    private void txt_cambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_cambioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_cambioActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
