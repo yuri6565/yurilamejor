@@ -24,7 +24,7 @@ import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import vista.InterFacturacion;
-
+/*se inentto*/
 /**
  *
  * @author edison
